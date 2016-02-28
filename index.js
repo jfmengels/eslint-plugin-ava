@@ -8,6 +8,7 @@ module.exports = {
 		'no-only-test': require('./rules/no-only-test'),
 		'no-skip-assert': require('./rules/no-skip-assert'),
 		'no-skip-test': require('./rules/no-skip-test'),
+		'no-statement-after-end': require('./rules/no-statement-after-end'),
 		'prefer-power-assert': require('./rules/prefer-power-assert'),
 		'test-ended': require('./rules/test-ended'),
 		'test-title': require('./rules/test-title')
@@ -28,6 +29,7 @@ module.exports = {
 				'no-only-test': 2,
 				'no-skip-assert': 2,
 				'no-skip-test': 2,
+				'no-statement-after-end': 2,
 				'prefer-power-assert': 0,
 				'test-ended': 2,
 				'test-title': [2, 'always']
