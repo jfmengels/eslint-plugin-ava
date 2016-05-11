@@ -1,15 +1,5 @@
-import test from 'ava';
-import {RuleTester} from 'eslint';
 import rule from '../rules/no-unknown-modifiers';
-
-RuleTester.describe = function (text, method) {
-	RuleTester.it.validity = text;
-	return method.apply(this);
-};
-
-RuleTester.it = function (text, method) {
-	test(RuleTester.it.validity + ': ' + text, method);
-};
+import RuleTester from './helpers/ava-rule-tester';
 
 const ruleTester = new RuleTester({
 	env: {
